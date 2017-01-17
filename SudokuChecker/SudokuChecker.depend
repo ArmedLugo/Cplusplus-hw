@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1484629493 source:c:\users\lugo\desktop\nueva carpeta\sudokuchecker\main.cpp
+	<iostream>
+	<assert.h>
+	<cstring>
+
