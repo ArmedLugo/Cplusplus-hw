@@ -1,0 +1,44 @@
+CREATE TABLE DatosNuevoLeon (
+    IdNl varchar(5) NOT NULL,
+    Indicador varchar(255),
+    Fuente varchar(255),
+    Unidad varchar(254),
+    Periodicidad varchar(255),
+    ABaseValor varchar(255),
+    AActualvalor varchar(255),
+    Meta varchar(255),
+    Tema varchar(255),
+    AreaDeOportunidades varchar(255)
+    PRIMARY KEY (IdNl)
+);
+
+CREATE TABLE Municipio (
+    Nombre varchar(255),
+    Pmunicipal varchar(255),
+    Poblacion varchar(255),
+);
+
+INSERT INTO DatosNuevoLeon (IdNl,Indicador, Fuente, Unidad, Periodicidad, ABaseValor, AActualvalor, Meta, Tema,AreaDeOportunidades)
+VALUES ('DH1','Cobertura preescolar: niños de 3 a 5 años inscritos en preescolar', 'CONAPO', 'Porcentaje', 'Anual', '2015-76.20', '2016-76.6','98%','Educacion','1');
+
+INSERT INTO DatosNuevoLeon (IdNl,Indicador, Fuente, Unidad, Periodicidad, ABaseValor, AActualvalor, Meta, Tema,AreaDeOportunidades)
+VALUES ('DH2','Cobertura media superior:jóneves de 15 a 17 años inscritos', 'CONAPO', 'Porcentaje', 'Anual', '2015-66.60', '2016-68','100%','Educacion','2');
+
+INSERT INTO DatosNuevoLeon (IdNl,Indicador, Fuente, Unidad, Periodicidad, ABaseValor, AActualvalor, Meta, Tema,AreaDeOportunidades)
+VALUES ('DH3','Logro académico: alumnos de nivel 1 i menor en la prueba PISA', 'INEE', 'Porcentaje', 'Anual', '2012-44%', 'nd-20.6%','20%','Educacion','3');
+
+INSERT INTO DatosNuevoLeon (IdNl,Indicador, Fuente, Unidad, Periodicidad, ABaseValor, AActualvalor, Meta, Tema,AreaDeOportunidades)
+VALUES ('DH6','Prevalencia de obesidad en adultos', 'Encuesta Nacional de Salud', 'Porcentaje', 'cada 3 años', '2015-40%', '2015-20%','19%','salud','6');
+
+INSERT INTO Municipio (Nombre, Pmunicipal, Poblacion)
+VALUES ('Abasolo','Cristina Alemán Aguilar','2,746');
+
+INSERT INTO Municipio (Nombre, Pmunicipal, Poblacion)
+VALUES ('Apodaca','Oscar Alberto Cantú','467,157');
+
+INSERT INTO Municipio (Nombre, Pmunicipal, Poblacion)
+VALUES ('Salinas Victoria','Gonzalo Elizondo','27,848');
+
+SELECT * FROM Municipio;
+
+SELECT * FROM DatosNuevoLeon;
